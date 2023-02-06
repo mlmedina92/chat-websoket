@@ -1,0 +1,26 @@
+{{!-- h4 se va a ir llenando c c/ nombre de us que se vaya conectando  lo capturo del dom y lo llevo con innertetxt en js--}}
+{{!-- el nombre de usuario lo vamos a ahcer a ttraves de sweetalert --}}
+
+{{!-- cdo doy click en enviar,s e genera un evento submit, se crea un objeto y se le envia al servidor. eso hace mi form --}}
+
+{{!-- uso wesocket para mandar OTIFICAIOENS PUSH Y EL CHAT EN TIEMPO REAL --}}
+
+<h4 id="nombreUsuario">usuario:</h4>
+
+<form id="formulario">
+    <input type="text" name="mensaje" id="mensaje">
+    <input type="submit" value="enviar">
+</form>
+
+<p id="chat"></p>
+
+{{!-- alertas --}}
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+
+{{!-- TRAIGO el scrip de soketio para trabajar del lado del cliente --}}
+<script src="/socket.io/socket.io.js"></script>
+{{!-- TRAIGO el scrip del js que creamos nosotros --}}
+<script src="index.js"></script>
